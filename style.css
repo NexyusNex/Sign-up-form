@@ -106,8 +106,28 @@ body{
     height: 50px;
     font-size: large;
     border-radius: 10px;
+    box-shadow: 0 0 20px rgb(179, 179, 179);
 }
 
-.lower-content span{
+.lower-content button:hover{
+    background-color: #778b65;
+}
+
+.lower-content button:active{
+    background-color: #47523b;
+}
+
+.lower-content a{
     color:#596D48;
+    text-decoration: none;
+}
+
+.lower-content a:hover{
+    color: #778b65;
+    text-decoration: none;
+}
+
+.lower-content a:active{
+    color:#47523b;
+    text-decoration: none;
 }
