@@ -1,5 +1,8 @@
+body{
+    margin:0;
+}
 .left-section{
-    background-image: url("/Images/background.jpg");
-    width: 50vw;
+    background-image: url("./Images/background.jpg");
+    width: 40vw;
     height:100vh;
 }
