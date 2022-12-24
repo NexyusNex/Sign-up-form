@@ -17,7 +17,7 @@
             Photo by <span>Hale West</span> on <span>Unsplash</span>
         </div>          
     </div>
-    <div class="right-section">
+    <form action="get" class="right-section">
         <div class="upper-content">
             <div>
                 This is not a real online service! You know you need something like this
@@ -28,7 +28,7 @@
         </div>
         <div class="form">
             <h1>Let's do this!</h1>
-            <form action="get">
+            <div class="form-input">
             
             <div>
                 <label for="fname">FIRST NAME</label>
@@ -40,7 +40,7 @@
             </div>
             <div>
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
             <div>
                 <label for="phone">PHONE NUMBER</label>
@@ -48,18 +48,18 @@
             </div>
             <div>
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" class="error">
+                <input type="password" id="password" name="password" class="error" required>
             </div>
             <div>
                 <label for="confirm-pass">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-pass" id="confirm-pass" class="error">
+                <input type="password" name="confirm-pass" id="confirm-pass" class="error" required>
             </div>
-            </form>
+            </div>
         </div>
         <div class="lower-content">
             <button type="submit">Create account</button>
             Already have an account? <a href="">Log in.</a>
         </div>
-    </div>
+    </form>
 </body>
 </html>
