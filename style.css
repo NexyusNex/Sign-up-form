@@ -12,6 +12,7 @@ body{
 }
 
 /*Left section*/
+
 .left-section{
     background-image: url("./Images/background.jpg");
     background-size:cover;
@@ -50,13 +51,15 @@ body{
     flex-direction: column;
     width: 100vw;
     background-color: rgb(235, 242, 248);
+    font-family: roboto;
 }
+
 /*upper content*/
+
 .upper-content{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    font-family: Roboto;
     padding-left:3%;
     padding-right: 15%;
     font-size: 30px;
@@ -73,11 +76,21 @@ body{
 .upper-content p{
     margin: 0;
 }
+
+/*middle content*/
+
 .form{
+    display: flex;
     padding-left: 3%;
     box-shadow:-10px 10px 15px -10px gray;
     background-color: white;
+    flex-direction: column;
 }
+.form form{
+    letter-spacing: 2px;
+}
+/*lower content*/
+
 .lower-content{
     flex-basis: 100%;
 }
