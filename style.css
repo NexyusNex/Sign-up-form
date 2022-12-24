@@ -43,7 +43,9 @@ body{
 .title-credit{
     margin-top: auto;
 }
-
+.title-credit span{
+    display: inline-block;
+}
 /*right section*/
 
 .right-section{
@@ -127,6 +129,7 @@ body{
 .error:invalid + span::after{
     content:"*Required";
     color:red;
+    font-size:small;
 }
 /*lower content*/
 
