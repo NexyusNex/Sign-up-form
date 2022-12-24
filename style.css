@@ -85,10 +85,32 @@ body{
     box-shadow:-10px 10px 15px -10px gray;
     background-color: white;
     flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.form h1{
+    margin: 15px 0;
+    color: rgb(34, 34, 34);
+}
+
+.form label{
+    display: block;
+}
+
+.form input{
+    width:250px;
+    height: 20px;
+    margin-bottom: 15px;
 }
 .form form{
     letter-spacing: 2px;
+    display: grid;
+    width:60%;
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
 }
+
 /*lower content*/
 
 .lower-content{
