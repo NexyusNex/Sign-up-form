@@ -1,8 +1,37 @@
+@font-face {
+    font-family: Norse-bold;
+    src: url("./Font/Norse-Bold.otf");
+}
 body{
     margin:0;
 }
+
+/*Left section*/
 .left-section{
     background-image: url("./Images/background.jpg");
     width: 40vw;
     height:100vh;
+    color: white;
+    text-align: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.left-section span{
+    text-decoration: underline;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.479);
+    font-family: Norse-bold;
+    font-size: 150px;
+    margin-top: 100px;
+    padding: 10px 0;
+}
+.title img{
+    width: 1em;
+}
+.title-credit{
+    margin-top: auto;
 }
