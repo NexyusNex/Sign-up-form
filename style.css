@@ -123,14 +123,12 @@ body{
     row-gap: 10px;
     grid-template-columns: repeat(2,1fr);
 }
-.error:invalid{
-    border-color: red;
-}
-.error:invalid + span::after{
-    content:"*Required";
+.error{
     color:red;
-    font-size:small;
+    font-size: 14px;
+    height: 25px;
 }
+
 /*lower content*/
 
 .lower-content{
