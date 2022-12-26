@@ -124,6 +124,16 @@ body{
     row-gap: 10px;
     grid-template-columns: repeat(2,1fr);
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
 .error{
     color:red;
     font-size: 12px;
