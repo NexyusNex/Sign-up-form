@@ -10,6 +10,12 @@ var emailError = document.getElementById('emailError');
 var tel = document.getElementById('tel');
 var telE = document.getElementById('telError');
 
+var pass = document.getElementById('password');
+var passE = document.getElementById('passwordError');
+
+var Cpsw = document.getElementById('confirm-pass');
+var CpswE = document.getElementById('confirmError');
+
 fname.addEventListener('input', function(){
     if(fname.value==''){
         fnameE.textContent='*Please enter a valid name';
@@ -28,7 +34,7 @@ lname.addEventListener('input', function(){
 
 email.addEventListener('input', function(){
     if(email.validity.typeMismatch){
-        emailError.textContent='Please enter a valid email. ex(John@gmail.com).'
+        emailError.textContent='*Please enter a valid email. ex(John@gmail.com).'
     } else {
         emailError.textContent='';
     }
@@ -36,8 +42,19 @@ email.addEventListener('input', function(){
 
 tel.addEventListener('input', function(){
     if(tel.validity.patternMismatch){
-        telE.textContent='Your enter more than 6 digits';
+        telE.textContent='*Please enter more than 6 digits';
     } else {
         telE.textContent='';
+    }
+})
+
+pass.addEventListener('input', function(){
+})
+
+Cpsw.addEventListener('input', function(){
+    if(pass.value!=Cpsw.value){
+        CpswE.textContent='*Password does not match!';
+    } else {
+        CpswE.textContent='';
     }
 })
