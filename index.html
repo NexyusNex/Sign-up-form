@@ -45,11 +45,11 @@
             </div>
             <div>
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="tel" name="tel">
+                <input type="tel" id="tel" name="tel" minlength="7">
             </div>
             <div>
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" class="error" required>
+                <input type="password" id="password" name="password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' class="error" required>
                 <span></span>
             </div>
             <div>
@@ -63,6 +63,7 @@
             <button type="submit">Create account</button>
             Already have an account? <a href="">Log in.</a>
         </div>
+        <script src="validation.js"></script>
     </form>
 </body>
 </html>
