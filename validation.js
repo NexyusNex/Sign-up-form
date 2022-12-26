@@ -41,11 +41,23 @@ email.addEventListener('input', function(){
 })
 
 tel.addEventListener('input', function(){
+    var error='';
     if(tel.validity.patternMismatch){
-        telE.textContent='*Please enter more than 6 digits';
-    } else {
-        telE.textContent='';
+        if(tel.value.length<6){
+            error+='*Please enter more than 6 digits. ';
+        }
+
+        if(isNaN(tel.value)==false){
+            error+=''
+        } else {
+            error+='*Please only enter numbers. ';
+        }
+
+        telE.textContent=error;
+    } else{
+
     }
+    
 })
 
 pass.addEventListener('input', function(){
