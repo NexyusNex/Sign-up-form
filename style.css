@@ -125,8 +125,9 @@ body{
 }
 .error{
     color:red;
-    font-size: 14px;
+    font-size: 12px;
     height: 25px;
+    width: 60%;
 }
 
 /*lower content*/

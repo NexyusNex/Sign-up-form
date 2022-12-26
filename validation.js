@@ -49,6 +49,45 @@ tel.addEventListener('input', function(){
 })
 
 pass.addEventListener('input', function(){
+    if(pass.validity.patternMismatch){
+        var capital = /[A-Z]/g;
+        var lowercase = /[a-z]/g;
+        var number = /[0-9]/g;
+        var errorText = '';
+        
+        //checks number
+
+        if(number.test(pass.value)){
+            errorText+='';
+        } else {
+            errorText+='Missing a number. \n';
+        }
+
+        //checks capital
+        if(capital.test(pass.value)){
+            errorText+='';
+        } else {
+            errorText+='Missing a capital letter. \n';
+        }
+
+        //checks lowercase
+
+        if(lowercase.test(pass.value)){
+            errorText+='';
+        } else {
+            errorText+='Missing a lowercase letter. \n';
+        }
+
+        //checks length
+        if(pass.value.length<8){
+            errorText+='Your password must contain at least 8 characters. \n';
+        }
+
+        passE.textContent=errorText;
+    } else {
+        passE.textContent='';
+    }
+    
 })
 
 Cpsw.addEventListener('input', function(){
